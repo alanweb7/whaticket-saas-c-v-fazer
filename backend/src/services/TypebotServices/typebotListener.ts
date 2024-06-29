@@ -27,6 +27,10 @@ const typebotListener = async ({
     typebot
 }: Request): Promise<void> => {
 
+    if (1) {
+        return;
+    }
+    
     if (msg.key.remoteJid === 'status@broadcast') return;
 
     const { urlN8N: url,
@@ -97,7 +101,7 @@ const typebotListener = async ({
             await ticket.reload();
         }
 
-        if (isNil(ticket.typebotSessionId)) {            
+        if (isNil(ticket.typebotSessionId)) {
             dataStart = await createSession(msg, typebot, number);
             sessionId = dataStart.sessionId
             status = true;
@@ -241,7 +245,7 @@ const typebotListener = async ({
                             try {
                                 let jsonGatilho = JSON.parse(gatilho);
 
-                                if (jsonGatilho.stopBot  && isNil(jsonGatilho.userId)  && isNil(jsonGatilho.queueId)) {
+                                if (jsonGatilho.stopBot && isNil(jsonGatilho.userId) && isNil(jsonGatilho.queueId)) {
                                     await ticket.update({
                                         useIntegration: false,
                                         isBot: false
@@ -393,7 +397,7 @@ const typebotListener = async ({
                 ticketData: {
                     status: "closed",
                     useIntegration: false,
-                    integrationId: null                   
+                    integrationId: null
                 },
                 ticketId: ticket.id,
                 companyId: ticket.companyId
