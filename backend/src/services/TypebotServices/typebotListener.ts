@@ -27,10 +27,10 @@ const typebotListener = async ({
     typebot
 }: Request): Promise<void> => {
 
-    if (1) {
-        return;
-    }
-    
+    // if (1) {
+    //     return;
+    // }
+
     if (msg.key.remoteJid === 'status@broadcast') return;
 
     const { urlN8N: url,
