@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <h1 align="center">🚀 Canal Vem Fazer</h1>
 <img src="https://imgur.com/N9LGCka.gif" />
 <h1 align="center">Um sistema de tickets extremamente completo baseado em mensagens do WhatsApp.</h1> 
@@ -24,3 +25,6 @@ Copia e cola:
 ## 🤝 Suporte
 
 Entre em contato através do <a href="https://wa.me/5581996277285?text=Bem%20vindo%20ao%20Equipechat." target="_blank">Whatsapp</a> ou <a href="https://pay.kiwify.com.br/P08ZZnY" target="_blank">suporte</a>.
+=======
+
+>>>>>>> 44cba5abe098e87dddd4e71d78c2e4c7754a7679
